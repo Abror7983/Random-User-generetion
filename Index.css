@@ -1,0 +1,213 @@
+
+
+:root {
+     /* fonts */
+     --serif-display: 'DM Serif Display', 'Georgia', serif;
+     --jost-text: 'Jost', 'Arial', sans-serif;
+     /* colors */
+     --primary-color: #cda274;
+     --secondary-color: #292f36;
+     --white-color: #fff;
+     --refresh-color: #fff;
+     --black-color: #000;
+     --shadow-color: rgba(41, 47, 54, 0.2);
+     /* background colors */
+     --white-bg-color: #fff;
+     --dark-bg-color: #292f36;
+     --color--btn: #000;
+   }
+*{
+     padding:0;
+     margin: 0;
+}
+*:focus {
+     outline: 1px dashed var(--primary-color);
+     outline-offset: 2px;
+   }
+body{
+     color: var(--secondary-color);
+     font-weight: 400;
+     line-height: 1.2;
+     font-family: 'Jost', 'Arial', sans-serif;
+     background-color: var(--white-bg-color);
+     transition: all 0.3s ease;
+}
+.dark-mode {
+     /* colors */
+     --primary-color: #cda274;
+     --secondary-color: #cda274;
+     --white-color: #fff;
+     --black-color: #000;
+     --shadow-color: rgba(0, 0, 0, 0.2);
+     --refresh-color: #292f36;
+     /* background colors */
+     --white-bg-color: #292f36;
+     --dark-bg-color: #fff;
+     --color--btn: #fff;
+}
+i {
+     color: var(--color--btn);
+     pointer-events: none;
+}
+ul li{
+     list-style: none;
+}
+.header{
+     width: 100%;
+     max-width: 1150px;
+     padding: 0 2rem;
+     margin: 0 auto;
+     background-color: var(--white-bg-color);
+     transition: all 0.3s ease;
+}
+.container{
+     align-items: center;
+     display: flex;
+     justify-content: space-between;
+     padding: 1rem 0rem;
+}
+.hidden{
+     display: none !important;
+}
+
+.ad{
+     border: 1px solid red;
+     padding: 3rem 0rem;
+     background-image: url(./images/svg/AD.jpg);
+     background-repeat: no-repeat;
+     background-size:cover;
+     background-position: center;
+     text-align: center;
+     color: var(--white-color);
+}
+.search{
+     width: 25vw;
+     border: none;
+     border-bottom: 1px solid var(--primary-color);
+     text-emphasis:inherit;
+     outline: none;
+     position: relative;
+     background-color: var(--white-bg-color);
+     color: var(--primary-color);
+     padding-left: 1rem;
+}
+.buttons{
+     display: inline;
+     margin-left: 5px;
+     font-weight:500;
+}
+.search-panel{
+     display: flex;
+     width:fit-content;
+     margin: auto;
+     padding: 2.5rem 0rem;
+     background-color: var(--white-bg-color);
+}
+.search-panel img{
+     width: 1.2rem;
+     height: 1.2rem;
+     margin-right: 5px;
+     align-items: center;
+}
+
+a{
+     text-decoration: none;
+     color: var(--secondary-color);
+}
+.buttons button{
+     padding: 3px 1.5rem;
+     background-color: var(--primary-color);
+}
+button{
+     background-color: transparent;
+     border: none;
+}
+.user {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+     gap: 3rem;
+}
+.user__item {
+     position: relative;
+     padding: 1rem 0.5rem;
+     text-align: center;
+     box-shadow: 0px 5px 10px 2px var(--shadow-color);
+}
+.user__delete--btn {
+     position: absolute;
+     right: 1rem;
+     top: 1rem;
+     border: 0;
+     background: transparent;
+     font-size: 1.5rem;
+     display: none;
+     transition: 0.3s;
+     outline: none;
+}
+.user__delete--btn:hover {
+     transform: rotate(15deg);
+}
+.user__item:hover .user__delete--btn {
+     display: block;
+}
+.user__img {
+     width: 120px;
+     height: 120px;
+     object-fit: contain;
+     object-position: center;
+     border-radius: 50%;
+     margin-bottom: 1rem;
+}
+.user div {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: 500;
+     color: var(--secondary-color);
+}
+.user div i {
+     color: var(--secondary-color);
+     padding-bottom: 0.5rem;
+}
+.user div:not(:last-child) {
+     margin-bottom: 1rem;
+}
+.user div span:last-child {
+     margin-left: 0.5rem;
+}
+.overlay {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     backdrop-filter: blur(3px);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.lds-ring {
+     display: inline-block;
+     position: relative; 
+} 
+.lds-ring div {
+     padding-bottom: 15rem;
+     box-sizing: border-box;
+     display: block;
+     margin: 8px;
+}
+.lds-ring div:nth-child(1) {
+     animation-delay: 5s;
+}
+@keyframes lds-ring {
+     0% {
+       transform: rotate(0deg);
+     }
+     100% {
+       transform: rotate(360deg);
+     }
+}
+   
+
