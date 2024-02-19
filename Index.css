@@ -115,7 +115,7 @@ a{
      color: var(--secondary-color);
 }
 .buttons button{
-     padding: 3px 1.5rem;
+     padding: 3px 0rem;
      background-color: var(--primary-color);
 }
 button{
