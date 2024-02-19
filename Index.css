@@ -123,10 +123,12 @@ button{
      border: none;
 }
 .user {
-     width: 100%;
+     width: 90%;
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
      gap: 3rem;
+     margin: auto;
+     padding-left: 0;
 }
 .user__item {
      position: relative;
